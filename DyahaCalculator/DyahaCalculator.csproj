@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Pictures\calculator.png" />
+    <None Remove="Pictures\Icon.ico" />
+    <None Remove="Pictures\Icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Pictures\calculator.png" />
+    <Resource Include="Pictures\Icon.ico" />
+    <Resource Include="Pictures\Icon.png" />
   </ItemGroup>
 
 </Project>

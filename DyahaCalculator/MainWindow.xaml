@@ -11,7 +11,7 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         AllowsTransparency="True"
-        Icon="Pictures\calculator.png"
+        Icon="Pictures\Icon.ico"
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Grid x:Name="MainRoot" Height="500">
 
@@ -62,13 +62,14 @@
             </Button>
         </StackPanel>
 
-        <Image Source="Pictures\calculator.png" HorizontalAlignment="Left" Width="29"/>
+        <Image Source="Pictures\Icon.png" HorizontalAlignment="Left" Width="25"/>
 
         <Label Content="Калькулятор" 
                Grid.ColumnSpan="3"
                Foreground="White"
+               FontSize="14"
                FontFamily="Arial"
-               HorizontalAlignment="Left" Margin="32,2,0,0" Width="83"/>
+               HorizontalAlignment="Left" Margin="32,2,0,0" Width="100"/>
 
         <!-- Окно ввода -->
 

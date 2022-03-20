@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qbFmVf3eEB7WI9QuqeAn0+LmujzJA6lgk1zxWX5PmLaFNtXTsvDZXGLm3o9TtomuvQIqpyJKUHLuKxRUVDXk8g==",
+  "dgSpecHash": "6phAdxggTYXpKToCJyiHKtPGe4JvUxSyF+OAcMkLI3K82j+iQQP8YFJcE7wgK2AZM6aXWHKdozLU6Wnw9b2cGg==",
   "success": true,
-  "projectFilePath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\DyahaCalculator\\DyahaCalculator.csproj",
+  "projectFilePath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\DyahaCalculator\\DyahaCalculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

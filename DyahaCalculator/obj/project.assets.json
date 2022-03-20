@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\DyahaCalculator\\DyahaCalculator.csproj",
+      "projectUniqueName": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\DyahaCalculator\\DyahaCalculator.csproj",
       "projectName": "DyahaCalculator",
-      "projectPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\DyahaCalculator\\DyahaCalculator.csproj",
+      "projectPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\DyahaCalculator\\DyahaCalculator.csproj",
       "packagesPath": "C:\\Users\\Dyaha\\.nuget\\packages\\",
-      "outputPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\DyahaCalculator\\obj\\",
+      "outputPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\DyahaCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -57,8 +57,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\ClassLibraryCalculator\\ClassLibraryCalculator.csproj": {
-              "projectPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\ClassLibraryCalculator\\ClassLibraryCalculator.csproj"
+            "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\ClassLibraryCalculator\\ClassLibraryCalculator.csproj": {
+              "projectPath": "D:\\Andrey\\Labs 2 course\\2 semester\\TP\\Lab_1\\Calculator\\ClassLibraryCalculator\\ClassLibraryCalculator.csproj"
             }
           }
         }

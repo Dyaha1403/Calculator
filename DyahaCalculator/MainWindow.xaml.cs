@@ -160,7 +160,6 @@ namespace DyahaCalculator
             if(Calculator.CalculatorRoot(Convert.ToDouble(InputBox.Text)) == -1)
             {
                 InputBox.Text = "Ошибка ввода";
-                InputBox.FontSize = 23;
                 ResultText.Content = "";
                 Calculator.num_1 = "";
                 ButtonOperationGrid.IsEnabled = false;
@@ -184,7 +183,6 @@ namespace DyahaCalculator
             {
                 InputBox.Text = "Переполнение";
                 ResultText.Content = "";
-                InputBox.FontSize = 23;
                 Calculator.num_1 = "";
                 ButtonOperationGrid.IsEnabled = false;
                 ButtonChangeSign.IsEnabled = false;
