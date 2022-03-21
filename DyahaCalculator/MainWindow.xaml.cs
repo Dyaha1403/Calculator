@@ -30,12 +30,7 @@ namespace DyahaCalculator
         }
         private void ButtonClean_Click(object sender, RoutedEventArgs e)
         {
-            if (InputBox.Text == "На ноль делить нельзя" || InputBox.Text == "Ошибка ввода" || InputBox.Text == "Переполнение")
-            {
-                InputBox.FontSize = 30;
-                ButtonOperationGrid.IsEnabled = true;
-                ButtonChangeSign.IsEnabled = true;
-            }
+            CheckOnTextError();
 
             InputBox.Text = "0";
             ResultText.Content = "";
@@ -43,15 +38,7 @@ namespace DyahaCalculator
         }
         private void ButtonErase_Click(object sender, RoutedEventArgs e)
         {
-            if (InputBox.Text == "На ноль делить нельзя" || InputBox.Text == "Ошибка ввода" || InputBox.Text == "Переполнение")
-            {
-                InputBox.FontSize = 30;
-                InputBox.Text = "0";
-                Calculator.Clean();
-                ResultText.Content = "";
-                ButtonOperationGrid.IsEnabled = true;
-                ButtonChangeSign.IsEnabled = true;
-            }
+            CheckOnTextError();
 
             string ChangedText = InputBox.Text.Remove(InputBox.Text.Length - 1);
 
@@ -76,16 +63,8 @@ namespace DyahaCalculator
         {
             Button Num = (Button)sender;
 
-            if (InputBox.Text == "На ноль делить нельзя" || InputBox.Text == "Ошибка ввода" || InputBox.Text == "Переполнение")
-            {
-                InputBox.FontSize = 30;
-                InputBox.Text = "0";             
-                ButtonOperationGrid.IsEnabled = true;
-                ButtonChangeSign.IsEnabled = true;
-                ResultText.Content = "";
-                Calculator.Clean();
-            }
-            
+            CheckOnTextError();
+
             if (!Calculator.InputNum(InputBox.Text, Num.Content.ToString()))
             {
                 return;
@@ -110,8 +89,8 @@ namespace DyahaCalculator
             if (Calculator.operation == "/" && InputBox.Text == "0")
             {
                 ResultText.Content += InputBox.Text;
-                InputBox.FontSize = 23;
                 InputBox.Text = "На ноль делить нельзя";
+                InputBox.FontSize = 23;
                 ButtonOperationGrid.IsEnabled = false;
                 ButtonChangeSign.IsEnabled = false;
                 Calculator.Clean();
@@ -160,10 +139,7 @@ namespace DyahaCalculator
             if(Calculator.CalculatorRoot(Convert.ToDouble(InputBox.Text)) == -1)
             {
                 InputBox.Text = "Ошибка ввода";
-                ResultText.Content = "";
-                Calculator.num_1 = "";
-                ButtonOperationGrid.IsEnabled = false;
-                ButtonChangeSign.IsEnabled = false;
+                ButtonFalse();
                 return;
             }
 
@@ -182,10 +158,7 @@ namespace DyahaCalculator
             if (num == "-1")
             {
                 InputBox.Text = "Переполнение";
-                ResultText.Content = "";
-                Calculator.num_1 = "";
-                ButtonOperationGrid.IsEnabled = false;
-                ButtonChangeSign.IsEnabled = false;
+                ButtonFalse();
                 return;
             }
 
@@ -216,16 +189,7 @@ namespace DyahaCalculator
         }
         private void ButtonResult_Click(object sender, RoutedEventArgs e)
         {
-            if (InputBox.Text == "На ноль делить нельзя" || InputBox.Text == "Ошибка ввода" || InputBox.Text == "Переполнение")
-            {
-                Calculator.Clean();
-                InputBox.FontSize = 30;
-                InputBox.Text = "0";
-                ResultText.Content = "";
-                ButtonOperationGrid.IsEnabled = true;
-                ButtonChangeSign.IsEnabled = true;
-                return;
-            }
+            CheckOnTextError();
 
             if (Convert.ToString(ResultText.Content) == "" || ResultText.Content.ToString().IndexOf("=") != -1)
             {
@@ -247,7 +211,7 @@ namespace DyahaCalculator
             Calculator.num_1 = InputBox.Text;
             Calculator.num_2 = "";
             Calculator.operation = "";
-
+         
             if (InputBox.Text == "На ноль делить нельзя")
             {
                 InputBox.FontSize = 23;
@@ -325,6 +289,26 @@ namespace DyahaCalculator
             buttonAnimationEnd.To = 20;
             buttonAnimationEnd.Duration = TimeSpan.FromSeconds(0.1);
             Num.BeginAnimation(Button.FontSizeProperty, buttonAnimationEnd);
+        }
+        public void CheckOnTextError()
+        {
+            if (InputBox.Text == "На ноль делить нельзя" || InputBox.Text == "Ошибка ввода" || InputBox.Text == "Переполнение")
+            {
+                Calculator.Clean();
+                InputBox.FontSize = 30;
+                InputBox.Text = "0";
+                ResultText.Content = "";
+                ButtonOperationGrid.IsEnabled = true;
+                ButtonChangeSign.IsEnabled = true;
+                return;
+            }
+        }
+        public void ButtonFalse()
+        {
+            ResultText.Content = "";
+            Calculator.num_1 = "";
+            ButtonOperationGrid.IsEnabled = false;
+            ButtonChangeSign.IsEnabled = false;
         }
         public void InputOperation(string Operation)
         {

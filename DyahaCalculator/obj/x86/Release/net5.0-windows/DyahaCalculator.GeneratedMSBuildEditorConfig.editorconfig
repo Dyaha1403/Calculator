@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DyahaCalculator
-build_property.ProjectDir = D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\DyahaCalculator\
+build_property.ProjectDir = D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\DyahaCalculator\

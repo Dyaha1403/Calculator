@@ -4,3 +4,9 @@ D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\ClassLibraryCalculator\obj\x86\Relea
 D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.csproj.CoreCompileInputs.cache
 D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.dll
 D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.pdb
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\bin\x86\Release\ClassLibraryCalculator.dll
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\bin\x86\Release\ClassLibraryCalculator.pdb
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.csproj.AssemblyReference.cache
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.csproj.CoreCompileInputs.cache
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.dll
+D:\Andrey\Labs 2 course\2 semester\TP\Lab_1\Calculator\ClassLibraryCalculator\obj\x86\Release\ClassLibraryCalculator.pdb
