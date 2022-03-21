@@ -67,8 +67,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestMethodCalculationResultPlus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMethodCalculationResultMinus.cs" />
+    <Compile Include="TestMethodCalculationResultDivision.cs" />
+    <Compile Include="TestMethodCalculationResultMult.cs" />
+    <Compile Include="TestMethodCalculatorSin.cs" />
+    <Compile Include="TestMethodCalculatorSquare.cs" />
+    <Compile Include="TestMethodCalculatorRoot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
