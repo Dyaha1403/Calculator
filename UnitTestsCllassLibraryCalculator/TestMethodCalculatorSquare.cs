@@ -16,7 +16,7 @@ namespace UnitTestsCllassLibraryCalculator
             double expected = 25;
 
             //Act
-            double actual = calculator.CalculatorRoot(num);
+            double actual = calculator.CalculatorSquare(num);
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -30,7 +30,7 @@ namespace UnitTestsCllassLibraryCalculator
             double expected = 4;
 
             //Act
-            double actual = calculator.CalculatorRoot(num);
+            double actual = calculator.CalculatorSquare(num);
 
             //Assert
             Assert.AreEqual(expected, actual);
